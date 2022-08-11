@@ -1,0 +1,311 @@
+$colorsection: radial-gradient(black, gray);
+$colornav: lightgray;
+$colorheader: radial-gradient(gray, black);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-padre{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0px;  
+    footer{
+        height: 150px;
+        .redes{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 100px;
+            margin-left: 50px;
+            .logo2{
+                width: 50px;
+                margin-top: 10px;
+                
+            }
+            
+            .logo1{
+                width: 100px;
+                margin-top: 5px;
+                
+            }
+            
+            .logo3{
+                width: 50px;
+                margin-top: 10px;
+            
+            }
+            
+            .logo4{
+                width: 50px;
+                margin-top: 10px;
+                
+            }
+        }
+    
+    }
+    
+    section{
+        background-image: $colorsection;
+     
+        
+    } 
+    nav{
+        background-color: $colornav;
+        margin-bottom: 70px;
+        height: 0px;
+       
+    }
+    .wp__image{
+        width: 85px;
+        margin-left: 1240px;
+        margin-top: 520px;
+        position: fixed;
+        
+    }
+    header{
+        background-image: $colorheader;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        .logo{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            transform: skew(15deg)
+        }
+        
+    }
+}
+
+
+
+
+
+
+#menu{
+    text-align: center;
+    ul{
+        background-color: lightgrey;
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 50px;
+        padding: 20px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        border: 1px solid;
+    }
+    li{
+        display: inline-block;
+        border: 1px solid;
+        padding: 4px;
+        text-align: center;
+        margin: 0 10px 0 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        a{
+            padding: 2px 7px 2px 7px;
+            color: #666;
+            background-color: #eeeeee;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            &:hover {
+                background-color: #333333;
+                color: #ffffff;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+#fondo{
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px)  {
+    .grid-padre{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        footer{
+        
+            grid-row: 4/4;
+            grid-column: 1/4;
+            
+        } 
+        section{
+            grid-row: 2/4;
+            grid-column: 1/4;
+            
+    .fototatuador{
+        height: 100%;
+        width: 100%;
+    }
+        }
+        nav{
+            grid-column: 2/3;
+             grid-row: 1/2;   
+         }
+        header{
+            grid-column: 1/2;
+           grid-row: 1/2;
+           .logo{
+            height: 150px;
+        }
+        }
+        
+    }
+   
+    
+       
+    
+  
+    #menu ul{
+        
+        padding: 80px;
+        margin-top: -40px;
+        height: 100px;
+    }
+
+
+
+    }
+
+@media screen and (max-width: 361px) {
+
+    .grid-padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        footer{
+            margin-right: 30px;
+            height: 50px;
+            .logo1{
+                width: 50px;
+               }
+            
+               .logo2{
+                width: 30px;
+                
+               }
+            
+               .logo3{
+                width: 30px;
+               }
+            
+               .logo4{
+                width: 30px;
+               }
+        }
+        section{
+            grid-column: 2/3;
+            grid-row: 2/4;
+            .fototatuador{
+                width: 260px;
+            }
+            
+            
+        }
+        nav{
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+        header{
+            grid-column: 1/3;
+            grid-row: 1;
+            .logo{
+                width: 250px;
+                height: 170px;
+            }
+            
+            
+        }
+    }
+
+
+
+  
+
+   
+
+
+
+    #menu ul{
+        width: 50px;
+        padding: 0px;
+        margin-top: 60px;
+    }
+
+ 
+
+    
+
+
+ 
+
+
+
+
+
+
+  
+    
+
+
+
+ 
+    
+}
+  
+
+
+   
+    
